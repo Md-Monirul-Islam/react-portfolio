@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import Home from "./containers/home/index";
@@ -16,10 +16,20 @@ function App() {
     await loadFull(main);
   };
 
+  const location = useLocation();
+  console.log(location)
+
+  const renderParticleJsInHomePage = location.pathname === '/';
+
   return (
     <div className="App">
       {/* Particles js */}
-      <Particles id="particles" init={particlesInit} options={particles} />
+
+      {
+        renderParticleJsInHomePage &&
+        <Particles id="particles" init={particlesInit} options={particles} />
+      }
+      
 
       {/* Navbar */}
       <Navbar />
