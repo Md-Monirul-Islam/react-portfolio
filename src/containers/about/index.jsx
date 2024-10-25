@@ -66,12 +66,19 @@ const About = () => {
                 </div>
 
                 <div className="about__content__services-wrapper">
-                    <div className="about__content__services-wrapper__inner-content">
-                        <div><FaDev size={60} color="var(--yellow-theme-main-color)" /></div>
-                        <div><DiAndroid size={60} color="var(--yellow-theme-main-color)" /></div>
-                        <div><FaDatabase size={60} color="var(--yellow-theme-main-color)" /></div>
-                        <div><DiApple size={60} color="var(--yellow-theme-main-color)" /></div>
-                    </div>
+                    <Animate
+                            play
+                            duration={1.5}
+                            start={{ transform: 'translateX(600px)' }}
+                            end={{ transform: 'translateY(0px)' }}
+                        >
+                        <div className="about__content__services-wrapper__inner-content">
+                            <div><FaDev size={60} color="var(--yellow-theme-main-color)" /></div>
+                            <div><DiAndroid size={60} color="var(--yellow-theme-main-color)" /></div>
+                            <div><FaDatabase size={60} color="var(--yellow-theme-main-color)" /></div>
+                            <div><DiApple size={60} color="var(--yellow-theme-main-color)" /></div>
+                        </div>
+                    </Animate>
                 </div>
             </div>
         </section>
