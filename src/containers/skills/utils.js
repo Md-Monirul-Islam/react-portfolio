@@ -39,6 +39,10 @@ export const skilsData = [
                 skillName: "DJANGO",
                 percentage: "80",
             },
+            {
+                skillName: "DJANGO REST FRAMEWORK",
+                percentage: "80",
+            },
         ]
     },
     {
