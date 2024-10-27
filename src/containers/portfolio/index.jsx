@@ -6,6 +6,9 @@ import ImageOne from '../images/one.png';
 import ImageTwo from '../images/two.png';
 import ImagThree from '../images/three.png';
 import Images from '../images/images.png';
+import brbImage from '../images/brb.png';
+import JUSTMedicalImage from '../images/JUST Medical Center.png';
+import BiologicalResearchCenter from '../images/biologicalResearchCenter.png';
 
 const Portfolio = () => {
     const [filteredValue, setFilteredValue] = useState(1);
@@ -13,15 +16,18 @@ const Portfolio = () => {
 
     const portfolioData = [
         { id: 2, name: 'Job Portal', image: ImageOne, link: 'https://jobs.just.edu.bd/' },
-        { id: 3, name: 'Multi Seller Ecommerce & POS', image: ImageTwo, link: 'https://kopotakkhoelectronics.com/' },
-        { id: 4, name: 'Company Portal', image: ImagThree, link: 'https://rcnbroadband.com/' },
-        { id: 3, name: 'Ecommerce', image: Images, link: 'https://brb-bd.org/' },
+        { id: 2, name: 'Multi Seller Ecommerce & POS', image: ImageTwo, link: 'https://kopotakkhoelectronics.com/' },
+        { id: 2, name: 'Company Portal', image: ImagThree, link: 'https://rcnbroadband.com/' },
+        { id: 3, name: 'Ecommerce', image: Images, link: '' },
+        { id: 2, name: 'Lab Portfolio', image: brbImage, link: 'https://brb-bd.org/' },
+        { id: 3, name: 'JUST Medical Center', image: JUSTMedicalImage, link: '' },
+        { id: 3, name: 'JUST Medical Center', image: BiologicalResearchCenter, link: '' },
     ];
 
     const filterData = [
         { filterId: 1, label: 'All' },
-        { filterId: 2, label: 'Development' },
-        { filterId: 3, label: 'Design' },
+        { filterId: 2, label: 'Live Project' },
+        { filterId: 3, label: 'Running Project' },
     ];
 
     function handleFilter(currentId) {
