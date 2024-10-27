@@ -1,35 +1,36 @@
-.home{
+.home {
     position: relative;
     height: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
 
-    &__text-wrapper{
+    &__text-wrapper {
         display: flex;
         align-content: center;
         flex-direction: column;
         justify-content: center;
 
-        h1{
+        h1 {
             color: var(--yellow-theme-main-color);
             margin: 0px;
             font-weight: 500;
-            font-size: 8rem;
-            line-height: 10rem;
+            font-size: 6vw; // Make font size responsive based on viewport width
+            line-height: 1.2em;
             position: relative;
             overflow: hidden;
-            white-space: nowrap;
-            animation: typingEffectAnimation 2.5s steps(30,end);
+            white-space: normal; // Allow text to wrap
+            animation: typingEffectAnimation 2.5s steps(30, end);
+            text-align: center; // Center align for smaller screens
         }
     }
 
-    &__contact-me{
+    &__contact-me {
         display: flex;
         justify-content: center;
         margin-top: 15px;
 
-        button{
+        button {
             cursor: pointer;
             padding: 10px 70px;
             font-size: 2rem;
@@ -39,7 +40,7 @@
             border-radius: 4px;
             font-weight: 500;
 
-            &:hover{
+            &:hover {
                 background: var(--yellow-theme-main-color);
                 color: #000000;
             }
@@ -47,33 +48,33 @@
     }
 }
 
-@media only screen and (max-width : 550px) {
-    .home__text-wrapper h1{
+// Additional media queries for fine-tuning specific screen sizes if needed
+@media only screen and (max-width: 550px) {
+    .home__text-wrapper h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 768px) {
+    .home__text-wrapper h1 {
         font-size: 3rem;
-        line-height: 5rem;
+        line-height: 4rem;
     }
 }
 
-@media only screen and (max-width : 551px) and (max-width : 768px) {
-    .home__text-wrapper h1{
-        font-size: 4rem;
-        line-height: 6rem;
-    }
-}
-
-@media only screen and (max-width : 769px) and (max-width : 990px) {
-    .home__text-wrapper h1{
-        font-size: 6rem;
-        line-height: 8rem;
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+    .home__text-wrapper h1 {
+        font-size: 4.5rem;
+        line-height: 5.5rem;
     }
 }
 
 @keyframes typingEffectAnimation {
-    from{
+    from {
         width: 0;
     }
-
-    to{
+    to {
         width: 100%;
     }
 }
