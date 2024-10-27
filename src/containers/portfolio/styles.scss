@@ -140,3 +140,12 @@
         }
     }
 }
+
+@media only screen and (max-width: 480px) {
+    .portfolio__content__cards__item .overlay div p {
+        font-size: 1.2rem; // Adjust font size for mobile
+        white-space: normal; // Allows text wrapping if necessary
+        overflow: visible;
+        text-overflow: initial;
+    }
+}
