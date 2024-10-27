@@ -12,10 +12,10 @@ const Portfolio = () => {
     const [hoverValue, setHoverValue] = useState(null);
 
     const portfolioData = [
-        { id: 2, name: 'Job Portal', image: ImageOne, link: '' },
-        { id: 3, name: 'Multi Seller Ecommerce & POS', image: ImageTwo, link: '' },
-        { id: 4, name: 'Company Portal', image: ImagThree, link: '' },
-        { id: 3, name: 'Ecommerce', image: Images, link: '' },
+        { id: 2, name: 'Job Portal', image: ImageOne, link: 'https://jobs.just.edu.bd/' },
+        { id: 3, name: 'Multi Seller Ecommerce & POS', image: ImageTwo, link: 'https://kopotakkhoelectronics.com/' },
+        { id: 4, name: 'Company Portal', image: ImagThree, link: 'https://rcnbroadband.com/' },
+        { id: 3, name: 'Ecommerce', image: Images, link: 'https://brb-bd.org/' },
     ];
 
     const filterData = [
@@ -71,7 +71,9 @@ const Portfolio = () => {
                                 {index === hoverValue && (
                                     <div>
                                         <p>{item.name}</p>
-                                        <button>Visit</button>
+                                        <a href={item.link} target="_blank" rel="noopener noreferrer">
+                                            <button>Visit</button>
+                                        </a>
                                     </div>
                                 )}
                             </div>
