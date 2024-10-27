@@ -21,7 +21,7 @@ const Portfolio = () => {
         { id: 3, name: 'Ecommerce', image: Images, link: '' },
         { id: 2, name: 'Lab Portfolio', image: brbImage, link: 'https://brb-bd.org/' },
         { id: 3, name: 'JUST Medical Center', image: JUSTMedicalImage, link: '' },
-        { id: 3, name: 'JUST Medical Center', image: BiologicalResearchCenter, link: '' },
+        { id: 3, name: 'Biological Research Center', image: BiologicalResearchCenter, link: '' },
     ];
 
     const filterData = [
