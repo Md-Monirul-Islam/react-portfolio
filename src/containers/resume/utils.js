@@ -3,13 +3,13 @@ export const data = {
         {
             title: 'Jr. Software Engineer',
             company: 'Romance Cable Network',
-            description: "Developed a REST API and MySQL to store data from Employee Reporting System. Developed a full-stack web application using Django, React.JS, and MySQL.",
+            description: "Developed a REST API and user-friendly frontend to manage various types of company applications. Developed a full-stack web application using Django, React.js and MySQL.",
             date: 'March 2024 - Present'
         },
         {
             title: 'Project Assistant',
             company: 'Prof. Dr. Sayed Md Galib (Chairman, dept. of CSE, JUST)',
-            description: "Developed a REST API and MySQL to store data from Employee Reporting System. Developed a full-stack web application using Django, React.JS, and MySQL.",
+            description: "Developed a Online Job Application of JUST using Django, Javascript and MySQL Database. Developed a Medical Center Automation System, JUST using Django, Javascript and MySQL Database.",
             date: 'Dec. 2022 - Jan. 2024'
         },
         {
